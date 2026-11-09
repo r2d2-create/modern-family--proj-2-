@@ -1,0 +1,126 @@
+:root{
+  --text: #0E0F0C;
+  --accents: #F05722;
+  --bkg: #AAC6D2;
+  --light: #F2F2F2;
+}
+
+* {
+  margin: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=GFS+Didot&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* PHIL, CLAIRE, GLORIA, HALEY */
+
+section {
+  flex-grow: 1;
+  background-color: var(--accents);
+  display: grid;
+  grid-template-columns: 0.5fr 4fr 0.5fr 5fr;
+  grid-template-row: auto;
+  gap: 10px;
+}
+
+section p {
+  background-color: var(--bkg);
+}
+
+/* INDEX.HTML */ 
+
+h1, h2 {
+  padding: 0 20px;
+  font-family: "GFS Didot", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--text);
+}
+
+p, a {
+  padding: 0 20px; 
+  color: var(--text);
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1;
+  background-color: var(--accents);
+  display: grid;
+  grid-template-columns: 1fr 1fr 0.5fr 5fr;
+  grid-template-row: auto;
+  gap: 10px;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--light);
+  text-align: center;
+}
+
+article p {
+  flex-grow: 1;
+}
+
+main div {
+  background-color: var(--bkg);
+}
+
+/* DROPDOWN */
+
+a {
+  text-decoration: none;
+  padding: 7px 20px;
+  color: var(--accents);
+  border: none;
+  cursor: pointer;
+}
+
+a:hover {
+  background-color: var(--bkg);
+}
+
+.characters {
+    display: inline-block; /* so "Characters" sits to the left on the same line right next to "Home" */
+}
+
+.characters p {
+    color: var(--accents);
+    padding: 7px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.characters a {
+    display: block;
+    color: black;
+    text-decoration: none; /* so "Characters" isn't underlined by default" */
+    padding: 7px 15px;
+}
+
+.characters .content {
+    display: none; /* hides dropdown contents by default */
+    position: absolute; /* so the dropdown content sits directly below the "Characters" container */
+    background-color: var(--light);
+    min-width: 113.5px; /* controls width of the dropdown container, I made it 113.5px to align with the width of the "Characters" container (which I listed as p)*/
+}
+
+.characters:hover .content {
+    display: block; /* upon hovering, gives each piece of dropdown content its own line and vertically stacks each one on top of the other */
+}
+
+.characters:hover p {
+    background-color: var(--bkg); /*so the background color turns blue once you hover over the "Characters" container AND/OR explore the dropdown*/
+}
+
+.characters a:hover {
+    background-color: var(--bkg); /*so the background color turns blue once you hover over each dropdown option */
+}

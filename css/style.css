@@ -54,7 +54,7 @@ main {
   flex-grow: 1;
   background-color: var(--accents);
   display: grid;
-  grid-template-columns: 1fr 1fr 0.5fr 5fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-row: auto;
   gap: 10px;
 }

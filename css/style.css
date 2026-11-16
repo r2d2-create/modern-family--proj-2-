@@ -22,6 +22,10 @@ section {
   gap: 10px;
 }
 
+section img {
+  width: 100%;
+}
+
 section p {
   background-color: var(--bkg);
 }

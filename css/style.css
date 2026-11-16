@@ -57,17 +57,16 @@ body {
 main {
   flex-grow: 1;
   background-color: var(--accents);
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-row: auto;
-  gap: 10px;
+  display: flex;
 }
 
-article {
-  display: flex;
-  flex-direction: column;
-  background-color: var(--light);
-  text-align: center;
+.home {
+  flex-grow: 1;
+  background-color: var(--accents);
+  display: grid;
+  grid-template-columns: 1fr 1fr 0.5fr 5fr;
+  grid-template-row: auto;
+  gap: 10px;
 }
 
 article p {

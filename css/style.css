@@ -79,7 +79,7 @@ main div {
 
 /* DROPDOWN */
 
-a {
+nav a {
   text-decoration: none;
   padding: 7px 20px;
   color: var(--accents);
@@ -87,7 +87,7 @@ a {
   cursor: pointer;
 }
 
-a:hover {
+nav a:hover {
   background-color: var(--bkg);
 }
 

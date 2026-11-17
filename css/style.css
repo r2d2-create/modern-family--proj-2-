@@ -76,6 +76,10 @@ article {
   text-align: center;
 }
 
+article img {
+  width: 100%;
+}
+
 article p {
   flex-grow: 1;
 }

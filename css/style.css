@@ -17,9 +17,13 @@ section {
   flex-grow: 1;
   background-color: var(--accents);
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 1fr 4fr 4fr;
   grid-template-rows: auto;
   gap: 10px;
+}
+
+section img {
+  width: 100%;
 }
 
 section p {
@@ -27,10 +31,6 @@ section p {
 }
 
 /* INDEX.HTML */ 
-
-article img {
-  width: 100%;
-}
 
 h1, h2 {
   padding: 0 20px;
@@ -64,9 +64,16 @@ main {
   flex-grow: 1;
   background-color: var(--accents);
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 5fr;
   grid-template-row: auto;
   gap: 10px;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--light);
+  text-align: center;
 }
 
 article p {
@@ -79,7 +86,7 @@ main div {
 
 /* DROPDOWN */
 
-nav a {
+a {
   text-decoration: none;
   padding: 7px 20px;
   color: var(--accents);
@@ -87,7 +94,7 @@ nav a {
   cursor: pointer;
 }
 
-nav a:hover {
+a:hover {
   background-color: var(--bkg);
 }
 
@@ -130,6 +137,6 @@ nav a:hover {
 
 @media (max-width:400px) {
 	main {
-		grid-template-columns: 1fr;
+		grid-template-columns: 1fr 1fr;
 	}
 }

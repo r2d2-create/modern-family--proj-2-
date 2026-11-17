@@ -128,4 +128,8 @@ a:hover {
     background-color: var(--bkg); /*so the background color turns blue once you hover over each dropdown option */
 }
 
-
+@media (max-width:400px) {
+	main {
+		grid-template-columns: 1fr;
+	}
+}

@@ -138,3 +138,21 @@ a:hover {
 .characters a:hover {
     background-color: var(--bkg); /*so the background color turns blue once you hover over each dropdown option */
 }
+
+@media (max-width: 375px) {
+  .home {
+    grid-template-columns: 1fr;
+  }
+
+/* Separates Gloria, and Haley with blue boxes in between */
+  .gloria {
+    grid-row: 6;
+  }
+
+  .haley {
+    grid-row: 8;
+  }
+  main div {
+    min-height: 150px; /* Gives the empty blue div spaces height so you can see them */
+  }
+}
